@@ -1,0 +1,41 @@
+version: '3.2'
+services:
+  dir:
+    image: "cassiojj/bacula-dir:4.0b"
+    restart: always
+    hostname: baculadir
+    volumes:
+      - type: bind
+        source: /data/Docker.bacula/Data/confs/dir
+        target: /etc/bacula/confs
+    ports:
+      - "9101:9101"
+  db:
+    image: "cassiojj/bacula-db:4.4b"
+    restart: always
+    volumes:
+      - type: bind
+        source: /data/Docker.bacula/Data/db
+        target: /var/lib/mysql
+  fd:
+    image: "cassiojj/bacula-fd:4.2b"
+    restart: always
+    ports:
+      - "9102:9102"
+  sd:
+    image: "cassiojj/bacula-sd:4.0b"
+    restart: always
+    volumes:
+      - type: bind
+        source: /data/Docker.bacula/Data/confs/sd
+        target: /etc/bacula
+      - type: bind
+        source: /mnt/baculanew/backups
+        target: /mnt/baculanew/backups
+    ports:
+      - "9103:9103"
+  webacula:
+    image: "cassiojj/webacula:4.1b"
+    restart: always
+    ports:
+      - "8082:80"

@@ -1,0 +1,9 @@
+=== DIR ====
+
+Run with volume to clients in "/etc/bacula/clientdefs/"
+
+Não esquecer de documentar a parte dos volumes, e caso tenha dado erro, deve remover todo o conteudo do Volume e criar novamente.
+
+Quando inserir ou remover algum cliente, deve-se não esquecer de fazer os ajustes nos arquivos, jobs, clients e filesets .conf, antes de dar o reload
+
+Password: M9hJENnxROGW15Pj
