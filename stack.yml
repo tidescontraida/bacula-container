@@ -15,7 +15,7 @@ services:
     restart: always
     volumes:
       - type: bind
-        source: ./Data/db
+        source: /tmp/mariadb
         target: /var/lib/mysql
   fd:
     image: "cassiojj/bacula-fd:4.2b"
