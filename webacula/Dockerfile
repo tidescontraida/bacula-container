@@ -12,7 +12,7 @@ RUN apt-get update -y && \
     apt-get install -y apache2 libapache2-mod-php php php-gd php-dev php-mcrypt php-curl && \
     apt-get install -y php-mysqlnd bareos-bconsole sudo
 
-ADD packages/webacula.tar.gz /usr/src/
+ADD https://s3.amazonaws.com/static.tidescontraida.com.br/bacula/webacula.tar.gz /usr/src/
 
 COPY scripts/finalize-webacula.sh /usr/local/sbin
 

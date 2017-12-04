@@ -13,7 +13,7 @@ RUN yum install -y epel-release && \
     yum -y install gcc-c++ zlib-devel lzo-devel libacl-devel libssl-dev make mariadb && \
     yum clean all
 
-ADD packages/bacula-9.0.3.tar.gz /usr/local/src
+ADD https://s3.amazonaws.com/static.tidescontraida.com.br/bacula/bacula-9.0.3.tar.gz /usr/local/src
 COPY scripts/install_bacula-fd.sh /usr/local/sbin
 COPY scripts/make-bkp-catalog.sh /usr/local/sbin
 

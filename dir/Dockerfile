@@ -14,7 +14,7 @@ RUN yum install -y epel-release && \
 	libssl-dev mariadb-devel mariadb-server wget make \
 	yum clean all
 
-ADD packages/bacula-9.0.3.tar.gz /usr/local/src
+ADD https://s3.amazonaws.com/static.tidescontraida.com.br/bacula/bacula-9.0.3.tar.gz /usr/local/src
 COPY scripts/install_bacula-dir.sh /usr/local/sbin
 
 RUN chmod +x /usr/local/sbin/* && \
