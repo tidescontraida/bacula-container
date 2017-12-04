@@ -6,7 +6,7 @@ services:
     hostname: baculadir
     volumes:
       - type: bind
-        source: /data/Docker.bacula/Data/confs/dir
+        source: ./Data/confs/dir
         target: /etc/bacula/confs
     ports:
       - "9101:9101"
@@ -15,7 +15,7 @@ services:
     restart: always
     volumes:
       - type: bind
-        source: /data/Docker.bacula/Data/db
+        source: ./Data/db
         target: /var/lib/mysql
   fd:
     image: "cassiojj/bacula-fd:4.2b"
@@ -27,11 +27,11 @@ services:
     restart: always
     volumes:
       - type: bind
-        source: /data/Docker.bacula/Data/confs/sd
+        source: ./Data/confs/sd
         target: /etc/bacula
       - type: bind
-        source: /mnt/baculanew/backups
-        target: /mnt/baculanew/backups
+        source: /tmp/backups
+        target: /tmp/backups
     ports:
       - "9103:9103"
   webacula:
