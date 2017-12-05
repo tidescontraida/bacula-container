@@ -1,6 +1,8 @@
-# bacula-docker
+# bacula-docker-BETA
 
-O Passo a Passo
+Stack para solução de backup com Bacula com Docker.
+
+# O Passo a Passo
 
 - Para subir este Stack, siga os passos abaixo:
 
@@ -11,23 +13,27 @@ O Passo a Passo
     - Acesse o diretório **bacula-docker/**;
     - Edite o arquivo **stack.yml** e altere o local onde será efetuado o backup, assim como o local onde ficará o base de dados do MariaDB;
 
-    ```
-    Nota
-    Neste caso estamos fazendo o backup no "/tmp/backups" e a base de dados do MariaDB está no "/tmp/mariadb".
-    É interessante que estes diretórios já existam.
-    Para o projeto em um ambiente de produção, faça os ajustes necessário,
-    ou seja, deve-se alterar tanto neste arquivo, quanto no bacula-sd.conf.
+```
+Nota
+Neste caso estamos fazendo o backup no "/tmp/backups" e a base de dados do MariaDB está no "/tmp/mariadb".
+É interessante que estes diretórios já existam.
+Para o projeto em um ambiente de produção, faça os ajustes necessário,
+ou seja, deve-se alterar tanto neste arquivo, quanto no bacula-sd.conf.
 
-    ```
-
-- Crie o stack com o comando abaixo:
+```
+   - Crie o stack com o comando abaixo:
 
     **# docker stack deploy -c stack.yml bacula**
 
-    ```
-    Importante
-    Este processo demora um pouco, pois ele tem que baixar as imagens do container e criá-los em seu ambiente.
-    Também pode apresentar alguns erros devido a criação do container de Banco de Dados.
-    Mas basta esperar que todos devem inicializar corretamente.
+```
+Importante
+Este processo demora um pouco, pois ele tem que baixar as imagens do container e criá-los em seu ambiente.
+Também pode apresentar alguns erros devido a criação do container de Banco de Dados.
+Mas basta esperar que todos devem inicializar corretamente.
 
-    ```
+```
+- Para validar o funcionamento, acesse o container do Director e execute o comando **bconsole**.
+
+# Demonstração
+
+EM BREVE!!!
