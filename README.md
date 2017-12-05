@@ -2,6 +2,11 @@
 
 Stack para solução de backup com Bacula com Docker.
 
+Caso ver a documenação detalhada, acesso o link abaixo:
+
+http://www.tidescontraida.com.br/bacula/bacula-docker/
+
+
 # Passo a Passo
 
 - Para subir este Stack, siga os passos abaixo:
