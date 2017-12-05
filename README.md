@@ -4,7 +4,7 @@ O Passo a Passo
 
 - Para subir este Stack, siga os passos abaixo:
 
- - Tenha certeza de quem tem o Docker instalado e funcionando;
+    - Tenha certeza de quem tem o Docker instalado e funcionando;
  - Tenha um cluster do swarm inicializado;
  - O git deve estar instalado;
  - Faça o clone do repositório do projeto;
