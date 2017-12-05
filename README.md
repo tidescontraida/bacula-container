@@ -2,13 +2,14 @@
 
 O Passo a Passo
 
-Para subir este Stack, siga os passos abaixo:
+- Para subir este Stack, siga os passos abaixo:
 
-Tenha certeza de quem tem o Docker instalado e funcionando em seu ambiente, assim como o cluster do swarm inicializado ;
-O git deve estar instalado também em seu ambiente;
-Faça o clone do repositório do projeto, que se encontra neste link;
-Acesse o diretório bacula-docker/;
-Edite o arquivo stack.yml e altere o local onde será efetuado o backup, assim como o local onde ficará o base de dados do MariaDB;
+- - Tenha certeza de quem tem o Docker instalado e funcionando;
+- - Tenha um cluster do swarm inicializado;
+- - O git deve estar instalado;
+- - Faça o clone do repositório do projeto;
+- - Acesse o diretório bacula-docker/;
+- - Edite o arquivo *stack.yml* e altere o local onde será efetuado o backup, assim como o local onde ficará o base de dados do MariaDB;
 
 ```
 Nota
