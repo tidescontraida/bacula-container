@@ -32,12 +32,15 @@ Também pode apresentar alguns erros devido a criação do container de Banco de
 Mas basta esperar que todos devem inicializar corretamente.
 
 ```
-- Para validar o funcionamento, use as duas opções abaixo:
+- Para validar o funcionamento, use uma das duas opções abaixo:
     - Acesse o container do Director e execute o comando **bconsole**.
-    - Acesse via browser o endereço http://127.0.0.1:8082/webacula e faça o loging com as credenciais:
+    - Acesse via browser o endereço http://127.0.0.1:8082/webacula e faça o login com as credenciais:
         - Usuário: root
         - Senha: M9hJENnxROGW15Pj
 
 # Demonstração
 
 EM BREVE!!!
+
+# Ah, nos ajude a melhorar isto!
+#TiDescontraida
