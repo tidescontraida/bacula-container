@@ -2,7 +2,7 @@
 
 Stack para solução de backup com Bacula com Docker.
 
-# O Passo a Passo
+# Passo a Passo
 
 - Para subir este Stack, siga os passos abaixo:
 
@@ -23,7 +23,7 @@ ou seja, deve-se alterar tanto neste arquivo, quanto no bacula-sd.conf.
 ```
    - Crie o stack com o comando abaixo:
 
-    **# docker stack deploy -c stack.yml bacula**
+    # docker stack deploy -c stack.yml bacula
 
 ```
 Importante
