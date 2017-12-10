@@ -15,7 +15,7 @@ http://www.tidescontraida.com.br/bacula/bacula-docker/
     - Tenha um cluster do swarm inicializado;
     - O git deve estar instalado;
     - Faça o clone do repositório do projeto;
-    - Acesse o diretório **bacula-docker/**;
+    - Acesse o diretório **bacula-container/**;
     - Edite o arquivo **stack.yml** e altere o local onde será efetuado o backup, assim como o local onde ficará o base de dados do MariaDB;
 
 ```
